@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'IranSans';
+  src: url(../../public/fonts/IRANSansWeb\(FaNum\).woff2);
+}
+
+* {
+  font-family: 'IranSans';
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+}
+
+/* COLORS */
+:root {
+  --blue: #146eb4;
+  --green: #008c45;
+  --yellow: #ec9704;
+  --black: #23272a;
+  --pink: #ffcdd5;
+  --grey: #6c757d;
+  --grey: #c5ccc5;
+  --btn-font: #f1f1f1;
+  --hover: #c5ccc5;
+  --purple: #702e66;
+  --red: #cd212a;
+  --white: #f9ffff;
+}
+
+.main-container {
+  padding: 40px 100px;
+  display: grid;
+  place-items: center;
+}
+
+/* BUTTONS => */
+.btn,
+.txt,
+.error {
+  padding: 5px 10px;
+  outline: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  width: 75px;
+  border: 2px solid;
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--white);
+  transition: all 1s ease;
+}
+
+.input-container {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.error {
+  width: 226px;
+  border: 1px solid var(--red);
+  color: var(--red);
+  background-color: var(--pink);
+  font-size: 14px;
+  position: absolute;
+  right: 275px;
+  padding: 6.5px 10px;
+}
+
+.txt {
+  width: 250px;
+  border: 1px solid var(--blue);
+}
+
+.btn:hover {
+  color: var(--white);
+}
+
+.btn-purple {
+  border-color: var(--purple);
+  color: var(--purple);
+}
+
+.btn-purple:hover {
+  background-color: var(--purple);
+}
+
+.btn-blue {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.btn-blue:hover {
+  background-color: var(--blue);
+}
+
+.btn-green {
+  border-color: var(--green);
+  color: var(--green);
+}
+
+.btn-green:hover {
+  background-color: var(--green);
+}
+
+.btn-red {
+  border-color: var(--red);
+  color: var(--red);
+}
+
+.btn-red:hover {
+  background-color: var(--red);
+}
+
+.btn-action {
+  display: block;
+  margin-bottom: 15px;
+  width: 250px;
+}
+/* <= BUTTONS */
+
+/* CONFIRM ALERT => */
+.confirm-alert {
+  text-align: center;
+  width: 500px;
+}
+
+.confirm-alert > h3 > span {
+  color: var(--red);
+}
+
+.confirm-alert-button {
+  display: flex;
+  justify-content: space-around;
+}
+/* <= CONFIRM ALERT*/

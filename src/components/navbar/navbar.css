@@ -1,0 +1,102 @@
+.navbar {
+  background: var(--red);
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+
+.hamburger-menu {
+  position: absolute;
+  right: 50px;
+  height: 50px;
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-menu span {
+  height: 5px;
+  width: 30px;
+  border-radius: 5px;
+  background-color: var(--white);
+}
+
+.hamburger-menu span:nth-child(2) {
+  margin: 5px 0;
+}
+
+.none {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.logo {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+}
+
+.navbar-list {
+  position: absolute;
+  right: 100px;
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar-item {
+  height: 50px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-item:hover {
+  background-color: var(--white);
+  color: var(--red);
+}
+
+.navbar-link {
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--white);
+  transition: all ease 0.75s;
+}
+
+.active,
+.active .navbar-item:hover {
+  background-color: var(--red);
+}
+
+@media (max-width: 600px) {
+  .hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .navbar-list {
+    display: none;
+  }
+
+  .navbar-item {
+    display: block;
+  }
+
+  .navbar-link {
+    display: block;
+  }
+}
+
+.navbar-search {
+  position: absolute;
+  left: 100px;
+  top: 10px;
+  height: 30px;
+  width: 200px;
+  border: 1px solid var(--white);
+  border-radius: 5px;
+  outline: none;
+  padding: 0 10px;
+}

@@ -1,0 +1,116 @@
+/* Component - BOOKS => */
+.books-wrapper {
+  display: grid;
+  place-items: center;
+}
+
+.books-container {
+  width: 870px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+/* <= Component - BOOKS */
+
+/* Component - ADD BOOK => */
+.btn-add {
+  width: 250px;
+  margin-bottom: 25px;
+  position: relative;
+  right: -33%;
+}
+/* <= Component - ADD BOOK */
+
+/* Component - BOOK => */
+/* Element - Card */
+.book {
+  width: 250px;
+  height: 350px;
+  padding: 5px;
+  float: right;
+}
+
+.book-wrapper {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.book-cover {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.book-data {
+  padding-right: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 1.5s ease;
+  z-index: 10;
+  color: var(--white);
+}
+
+.book-author {
+  font-size: 15px;
+}
+
+.book-name {
+  font-size: 30px;
+}
+
+.book-more {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.book-more:hover {
+  font-size: 16px;
+}
+
+.book:hover .book-data {
+  transform: translateY(-110px);
+}
+/* Element - Card */
+/* <= Component - BOOK */
+
+/* Component - VIEW BOOK => */
+.view-book-container {
+  display: flex;
+  width: 750px;
+  border: 1px solid var(--grey);
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.view-image {
+  height: 300px;
+}
+
+.view-book-list {
+  list-style-type: none;
+  padding: 15px;
+  height: 100%;
+}
+
+.view-book-item:first-child,
+.view-book-item:nth-child(2),
+.view-book-item:nth-child(3),
+.view-book-item:nth-child(5) {
+  height: 40px;
+}
+
+.view-book-item:nth-child(4) {
+  height: 100px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.view-book-item > span {
+  font-weight: 700;
+}
+/* <= Component - BOOK */
