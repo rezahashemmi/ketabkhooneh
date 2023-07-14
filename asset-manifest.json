@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/ketabkhooneh/static/css/main.0f9d2e04.css",
-    "main.js": "/ketabkhooneh/static/js/main.c29c0209.js",
+    "main.js": "/ketabkhooneh/static/js/main.723614be.js",
     "static/media/loading.gif": "/ketabkhooneh/static/media/loading.0b63f279cb8ac2b9a426.gif",
     "static/media/not-found.gif": "/ketabkhooneh/static/media/not-found.8a3fe9fd54d21c85d260.gif",
     "static/media/IRANSansWeb(FaNum).woff2": "/ketabkhooneh/static/media/IRANSansWeb(FaNum).e2b0436903df14b8a8c2.woff2",
     "index.html": "/ketabkhooneh/index.html",
     "main.0f9d2e04.css.map": "/ketabkhooneh/static/css/main.0f9d2e04.css.map",
-    "main.c29c0209.js.map": "/ketabkhooneh/static/js/main.c29c0209.js.map"
+    "main.723614be.js.map": "/ketabkhooneh/static/js/main.723614be.js.map"
   },
   "entrypoints": [
     "static/css/main.0f9d2e04.css",
-    "static/js/main.c29c0209.js"
+    "static/js/main.723614be.js"
   ]
 }
